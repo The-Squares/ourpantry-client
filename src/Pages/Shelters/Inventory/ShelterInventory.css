@@ -1,0 +1,165 @@
+.ShelterInventory > :first-child {
+  margin-top: 16px;
+  /* padding-bottom: 10px; */
+  height: 85px;
+}
+
+.ShelterInventory {
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+  overflow-y: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.shelterAddMenu {
+  background: #fbf9f5;
+  border-top: 2px solid rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  position: fixed;
+  bottom: 0px;
+  height: 0px;
+  transition: height 0.15s ease-out;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  /* visibility: hidden; */
+}
+
+.shelterUpper {
+  height: 101px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shelterUpper p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+.shelterLower {
+  height: 215px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shelterQuantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  gap: 6px;
+  font-size: 1.1rem;
+}
+
+.shelterQuantity p {
+  margin: 0px;
+  color: var(--dark-blue);
+}
+
+.shelterQuantity > :first-child {
+  margin-top: 15px;
+}
+
+.shelterQuantity .quantityCount {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  font-size: 1.4rem;
+}
+
+.shelterQuantity .quantityCount :first-child,
+.shelterQuantity .quantityCount :last-child {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.priorityCheck {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 35px;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.pFirst {
+  background-color: #83eb66;
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.pSecond {
+  background-color: #efea72;
+  flex: 1;
+  height: 100%;
+}
+
+.pThird {
+  background-color: #a71c1c;
+  flex: 1;
+  height: 100%;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.shelterLower button {
+  width: 80%;
+  height: 77px;
+  background: #fbf9f5;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+}
+
+.shelterItemList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  height: 80vh;
+  color: var(--dark-blue);
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.shelterItemList > :last-child {
+  margin-bottom: 30px;
+}
+
+.shelterItemList > p {
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: 32px;
+}
+
+.shelterShowMenu {
+  height: 316px;
+  transition: height 0.15s ease-out;
+}
+
+.shelterMinItems {
+  height: calc(100vh - 64px - 86px - 316px - 30px);
+  transition: height 0.15s ease-out;
+}
+
+.shelterQuantity .SmallButton {
+  margin-top: 10px;
+}

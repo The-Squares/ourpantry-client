@@ -1,0 +1,18 @@
+.Scanner video {
+  width: 95vw;
+  height: 95vw;
+}
+
+.Scanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+}
+
+.Scanner button {
+  position: absolute;
+  top: 80px;
+  left: 5px;
+}

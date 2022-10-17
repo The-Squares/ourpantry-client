@@ -1,0 +1,8 @@
+{
+  "short_name": "Our Pantry",
+  "name": "Our Pantry",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#89a98c",
+  "background_color": "#ffffff"
+}

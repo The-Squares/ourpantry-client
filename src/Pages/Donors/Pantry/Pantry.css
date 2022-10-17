@@ -1,0 +1,19 @@
+.Pantry {
+  margin-top: 80px;
+}
+
+.pantryRequests {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Pantry .Divider {
+  padding-bottom: 10px;
+}
+
+.pantryDataTitle {
+  width: 70vw;
+}

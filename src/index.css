@@ -1,4 +1,27 @@
 * {
   font-family: "Lato", sans-serif;
-  font-weight: 900;
+  --cyan: #62bcd3;
+  --light-blue: #068afe;
+  --blue: #08499f;
+  --dark-blue: #063677;
+  --gray: #f9f8f6;
+  --green: #a5ca9b;
+}
+
+*:not(span) {
+  font-weight: 700;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f9f8f6;
+  overscroll-behavior: none;
+}
+
+html {
+  height: 100%;
+  height: 100vw;
+  width: 100vw;
+  overscroll-behavior: none;
 }

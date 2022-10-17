@@ -1,0 +1,39 @@
+.SideBar {
+  width: 70vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 300;
+  background-color: var(--dark-blue);
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr 2fr;
+}
+
+.SideBar > * {
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.SideBar .sideTop p {
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.SideBar p {
+  font-size: 1.3rem;
+  margin-left: 15%;
+}
+
+.sidebarEnabled {
+  left: 0px !important;
+  transition: left 0.2s ease-out;
+}
+
+.sidebarDisabled {
+  left: calc(-70vw - 2px) !important;
+  transition: left 0.2s ease-out;
+}

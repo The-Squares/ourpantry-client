@@ -1,0 +1,22 @@
+.Divider span {
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.Divider {
+  color: var(--dark-blue);
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.Divider > * {
+  margin: 10px;
+  margin-left: 9vw;
+}
+
+.Divider > :first-child {
+  font-size: 1.8rem;
+}
+
+.Divider > :last-child {
+  font-size: 0.9rem;
+}

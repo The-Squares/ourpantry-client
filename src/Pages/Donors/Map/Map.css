@@ -1,0 +1,5 @@
+.Map {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+}

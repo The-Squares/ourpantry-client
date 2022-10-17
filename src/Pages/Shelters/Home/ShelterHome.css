@@ -1,0 +1,24 @@
+.ShelterHome > :first-child {
+  margin-top: 80px;
+}
+
+.ShelterHome .Divider {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.ShelterHome {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shelterHomeCards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}

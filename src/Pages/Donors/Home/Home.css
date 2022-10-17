@@ -1,0 +1,42 @@
+.Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeTop > :first-child {
+  margin-top: 80px;
+}
+
+.homeTop {
+  background-color: var(--dark-blue);
+  padding-top: 20px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 79px;
+  padding-bottom: 44px;
+}
+
+.homePantryList {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  /* padding-bottom: calc(100vh - 100% + 20px); */
+}
+
+.distanceSelector {
+  border: 0px;
+  border-bottom: 1px solid var(--dark-blue);
+  outline: 0px;
+  appearance: none;
+  color: var(--dark-blue);
+  background-color: var(--gray);
+  font-size: 14.4px;
+}

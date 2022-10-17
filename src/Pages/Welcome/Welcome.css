@@ -1,0 +1,31 @@
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    #068afe 1.04%,
+    rgba(48, 161, 234, 0.89) 33.33%,
+    rgba(98, 188, 211, 0.79) 60.42%
+  );
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 57px;
+}
+
+.welcomeButtons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100vw;
+  bottom: 150px;
+}
+
+.Welcome > p {
+  margin-top: 15vh;
+}

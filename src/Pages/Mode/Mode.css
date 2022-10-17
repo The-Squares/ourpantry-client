@@ -1,0 +1,23 @@
+.Mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(98, 188, 211, 0.91) 29.93%,
+    #068afe 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 57px;
+}
+
+.Mode > p {
+  margin-top: 15vh;
+}
+
+.modeButtons > :last-child p {
+  font-size: 23px;
+}

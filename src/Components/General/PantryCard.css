@@ -1,0 +1,48 @@
+.PantryCard {
+  width: 323px;
+  height: 77px;
+  background: #fbf9f5;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pantryRight {
+  height: 77px;
+  align-self: right;
+}
+
+.pantryMiddle {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pantryLeft {
+  width: 181px;
+  height: 100%;
+}
+
+.pantryLeft > * {
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--dark-blue);
+}
+
+.pantryTitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.pantryDescrip {
+  font-size: 0.9rem;
+}
+
+.pantryStar {
+  transform: scale(2);
+}

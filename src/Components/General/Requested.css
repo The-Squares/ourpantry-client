@@ -1,0 +1,94 @@
+.Requested {
+  width: 361px;
+  height: 244px;
+  background-color: white;
+  border-radius: 13px;
+  display: flex;
+  color: var(--dark-blue);
+}
+
+.requestedBlue {
+  width: 104px;
+}
+
+.requestedBlue p {
+  position: relative;
+  left: -80px;
+
+  color: var(--dark-blue);
+  font-size: 17px;
+}
+
+.requestedText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.requestedTop,
+.requestedBottom {
+  width: 100%;
+  flex: 1;
+}
+
+.requestedTop {
+  display: grid;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.requestedTop > :first-child {
+  margin-top: 4px;
+}
+
+.requestTop > * {
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+.starBox p {
+  margin: 0px;
+}
+
+.requestedStar {
+  display: inline-block;
+}
+
+.starBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.requestedItems {
+  font-size: 22px !important;
+  margin: 0px;
+}
+
+.requestedFood {
+  margin-top: 0px;
+  margin-left: 40%;
+}
+
+.requestedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.17);
+  display: grid;
+  align-items: center;
+}
+
+.requestedBottom p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.requestedBank {
+  margin-top: -20px;
+}
+
+.requestedBottom > * {
+  margin-left: 20px;
+}

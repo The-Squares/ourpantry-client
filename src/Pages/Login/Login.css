@@ -1,0 +1,49 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(
+    180deg,
+    #068afe 1.04%,
+    rgba(48, 161, 234, 0.89) 33.33%,
+    rgba(98, 188, 211, 0.79) 60.42%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+.Login > p {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.Login input {
+  width: 80vw;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.Login input::placeholder {
+  color: white;
+  font-size: 1.3rem;
+  opacity: 1;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  gap: 40px;
+  margin-top: 20vh;
+}
+
+.Login .BigButton {
+  margin-top: 5vh;
+}
