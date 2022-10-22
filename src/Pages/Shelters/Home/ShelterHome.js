@@ -28,7 +28,7 @@ function ShelterHome() {
             time={"13"}
             item="Green Beans"
             count={12}
-            location={"LA Food Shelter"}
+            location={"World Harvest"}
             buttonText="Send Request"
             color="#62BCD3"
             to="/shelters/inventory"
