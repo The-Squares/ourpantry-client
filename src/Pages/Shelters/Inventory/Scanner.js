@@ -13,7 +13,7 @@ function Scanner({ finished, swap }) {
     } catch {
       window["BarcodeDetector"] =
         // @ts-ignore
-        window.barcodeDetectorPolyfill.BarcodeDetectorPolyfill;
+        barcodeDetectorPolyfill.BarcodeDetectorPolyfill; // eslint-disable-line
     }
     let BarcodeDetector = window["BarcodeDetector"];
 
