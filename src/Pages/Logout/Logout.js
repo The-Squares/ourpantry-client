@@ -6,6 +6,8 @@ function Logout() {
   let navigate = useNavigate();
 
   useEffect(() => {
+    localStorage.setItem("isShelter", "");
+    localStorage.setItem("userData", "");
     navigate("/");
   }, [navigate]);
 

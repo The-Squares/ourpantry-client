@@ -1,8 +1,19 @@
 import React from "react";
 import "./Welcome.css";
 import BigButton from "Components/General/BigButton";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Welcome() {
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    let mode = localStorage.getItem("isShelter");
+    if (mode) {
+      navigate(`/${mode ? "shelters" : "donors"}`);
+    }
+  });
+
   return (
     <div className="Welcome">
       <p>
