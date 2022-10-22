@@ -15,12 +15,21 @@ function InventoryCard({
 
   let addOrSub = async (value) => {
     let baseurl = `${process.env.REACT_APP_SERVER_IP}/shelter/${shelterid}/item/${name}/`;
-    baseurl += value > 0 ? "add" : "sub";
+    let newurl = baseurl + (value > 0 ? "add" : "sub");
 
     let newCount = parseInt(count) + value;
-    if (newCount < 0) return;
+    if (newCount < 0) {
+      let response = await fetch(baseurl, {
+        method: "DELETE",
+        headers: { "Content-Type": "text/plain" },
+        body: password,
+      });
+      if (response.status !== 200) return;
+      window.location.reload();
+      return;
+    }
     setCount(newCount);
-    let response = await fetch(baseurl, {
+    let response = await fetch(newurl, {
       method: "PUT",
       headers: { "Content-Type": "text/plain" },
       body: password,
