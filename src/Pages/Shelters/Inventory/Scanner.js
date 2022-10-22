@@ -1,5 +1,5 @@
 import React from "react";
-import { BarcodeDetectorPolyfill } from "@undecaf/barcode-detector-polyfill";
+// import { BarcodeDetectorPolyfill } from "@undecaf/barcode-detector-polyfill";
 import "./Scanner.css";
 import { useEffect } from "react";
 
@@ -11,7 +11,9 @@ function Scanner({ finished, swap }) {
     try {
       window["BarcodeDetector"].getSupportedFormats();
     } catch {
-      window["BarcodeDetector"] = BarcodeDetectorPolyfill;
+      window["BarcodeDetector"] =
+        // @ts-ignore
+        window.barcodeDetectorPolyfill.BarcodeDetectorPolyfill;
     }
     let BarcodeDetector = window["BarcodeDetector"];
 

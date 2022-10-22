@@ -2192,18 +2192,6 @@
     "@typescript-eslint/types" "5.32.0"
     eslint-visitor-keys "^3.3.0"
 
-"@undecaf/barcode-detector-polyfill@^0.9.13":
-  version "0.9.13"
-  resolved "https://registry.yarnpkg.com/@undecaf/barcode-detector-polyfill/-/barcode-detector-polyfill-0.9.13.tgz#fce948a5ebb54788eb6fbf09267924934fffc4f6"
-  integrity sha512-gkukDBEIl/IMhTWHLwrPUVt1fAsT4E4J+JxPNFIS9QMz6WOVctQ8Yc6DsDCtANCwl2xy3QTdvMNNvj+n7Vo2ig==
-  dependencies:
-    "@undecaf/zbar-wasm" "^0.9.11"
-
-"@undecaf/zbar-wasm@^0.9.11":
-  version "0.9.11"
-  resolved "https://registry.yarnpkg.com/@undecaf/zbar-wasm/-/zbar-wasm-0.9.11.tgz#3bcc746f3f0e40f1a942cc1b7ca41658de725455"
-  integrity sha512-R73AbCWeKAmwuldXGOvklgspHlPHAEXlU7qOz9wUgrNSfHTeffayDL86XP9lYuqwASHT1MBiu2qCXSuL3o8t8A==
-
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.11.1.tgz#2bfd767eae1a6996f432ff7e8d7fc75679c0b6a7"
