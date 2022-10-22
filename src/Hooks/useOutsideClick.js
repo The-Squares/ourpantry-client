@@ -1,4 +1,4 @@
-const { useEffect } = require("react");
+import { useEffect } from "react";
 
 function useOutsideAlerter(ref, enabled, callback) {
   useEffect(() => {
