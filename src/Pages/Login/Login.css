@@ -19,6 +19,16 @@
   margin-top: 10vh;
 }
 
+.Login h1 {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: white;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 10px;
+}
+
 .Login input {
   width: 80vw;
   height: 40px;

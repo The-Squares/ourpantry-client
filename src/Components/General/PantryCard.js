@@ -4,9 +4,11 @@ import StarWrapped from "Media/StarWrapped";
 import RightIconWrapped from "Media/RightIconWrapped";
 import { useState } from "react";
 import { Textfit } from "react-textfit";
+import { useEffect } from "react";
 
 function PantryCard({
   star = true,
+  isStarOn = false,
   arrow = true,
   onClick = () => {},
   color = "#62BCD3",
@@ -15,8 +17,23 @@ function PantryCard({
   distance = "",
 }) {
   let [starOn, setStarOn] = useState(false);
+  let favoriteItem = () => {
+    let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    if (!starOn) {
+      favorites.push(name);
+    } else {
+      favorites = favorites.filter((favorite) => name !== favorite);
+    }
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    setStarOn(!starOn);
+  };
+
+  useEffect(() => {
+    setStarOn(isStarOn);
+  }, [isStarOn]);
+
   return (
-    <div className="PantryCard" onClick={onClick}>
+    <div className="PantryCard">
       <div className="pantryLeft">
         <div style={{ maxHeight: "30px" }}>
           <Textfit mode="single" className="pantryTitle" max={21}>
@@ -39,13 +56,13 @@ function PantryCard({
           <StarWrapped
             className="pantryStar"
             filled={starOn}
-            onClick={() => setStarOn(!starOn)}
+            onClick={favoriteItem}
           />
         ) : (
           <></>
         )}
       </div>
-      <div className="pantryRight">
+      <div className="pantryRight" onClick={onClick}>
         <RightIconWrapped arrow={arrow} color={color}></RightIconWrapped>
       </div>
     </div>

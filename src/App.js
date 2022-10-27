@@ -10,6 +10,7 @@ import Welcome from "Pages/Welcome/Welcome";
 import Mode from "Pages/Mode/Mode";
 import Login from "Pages/Login/Login";
 import Logout from "Pages/Logout/Logout";
+import Signup from "Pages/Signup/Signup";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Welcome />} />
         <Route path="/mode" element={<Mode />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/donors" element={<DonorHome />} />
         <Route path="/donors/pantry/:pantryid" element={<DonorPantry />} />
         <Route path="/donors/map" element={<Map />} />

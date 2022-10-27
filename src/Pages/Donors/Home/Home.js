@@ -9,11 +9,13 @@ import useFoodbanks from "Hooks/useFoodbanks";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import useUserData from "Hooks/useUserData";
+import useFavorites from "Hooks/useFavorites";
 
 function Home() {
   useUserData();
   let [distance, setDistance] = useState(10);
   let nearbyBanks = useFoodbanks(distance);
+  let favorites = useFavorites();
   let navigate = useNavigate();
 
   return (
@@ -60,11 +62,12 @@ function Home() {
         <div
           className="homePantryList"
           // Put a guard for # of cards (in this case 4) must be less than 6 and greater than 0
-          style={{ paddingBottom: `${580 - 105 * (nearbyBanks.length - 1)}px` }}
+          style={{ paddingBottom: "20px" }}
         >
           {nearbyBanks.map((bank) => (
             <PantryCard
               name={bank.name}
+              isStarOn={favorites.includes(bank.name)}
               location="Los Angeles, CA"
               distance={`${bank.distance} ${
                 bank.distance === 1 ? "mile" : "miles"

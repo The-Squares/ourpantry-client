@@ -16,8 +16,8 @@ function ShelterHome() {
           <Card
             title={"Inventory"}
             time={"13"}
-            item="Canned Tomatoes"
-            count={12}
+            item="Whole Tomatoes"
+            count={2}
             preLocation={"Type"}
             location={"Non-Perishable"}
             buttonText="Update"
@@ -26,8 +26,8 @@ function ShelterHome() {
           <Card
             title={"Request Items"}
             time={"13"}
-            item="Green Beans"
-            count={12}
+            item="Veggie all original"
+            count={4}
             location={"World Harvest"}
             buttonText="Send Request"
             color="#62BCD3"

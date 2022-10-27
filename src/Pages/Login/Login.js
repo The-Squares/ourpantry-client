@@ -48,6 +48,11 @@ function Login() {
 
   return (
     <div className="Login">
+      <h1
+        onClick={() => navigate("/signup", { state: { isShelter: isShelter } })}
+      >
+        Signup
+      </h1>
       <p>{isShelter ? "Shelter" : "Donor"} Login</p>
       <div className="loginInputs">
         <input
