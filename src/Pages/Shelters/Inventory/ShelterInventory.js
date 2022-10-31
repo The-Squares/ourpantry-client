@@ -17,7 +17,8 @@ function ShelterInventory() {
   let [menuClass, listClass, updatePop] = usePopup();
   let [scanning, switchScanning] = useBoolean(false);
   let userData = useUserData();
-  let inventory = useInventory(userData.id);
+  let inventory = useInventory(userData.id, userData.password);
+
   if (Object.keys(userData).length === 0) {
     return <></>;
   }
